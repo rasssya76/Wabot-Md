@@ -10,6 +10,7 @@ const { isLimit, limitAdd, getLimit, giveLimit, addBalance, kurangBalance, getBa
 const { isTicTacToe, getPosTic } = require("../lib/tictactoe");
 const { addPlayGame, getJawabanGame, isPlayGame, cekWaktuGame, getGamePosi } = require("../lib/game");
 const tictac = require("../lib/tictac");
+const { hentai } = require('./lib/scraper')
 const _prem = require("../lib/premium");
 
 const fs = require ("fs");
@@ -215,8 +216,8 @@ module.exports = async(conn, msg, m, setting) => {
 		}
 		
 		const buttonsDefault = [
-			{ callButton: { displayText: `Call Owner!`, phoneNumber: `+6285791458996` } },
-			{ urlButton: { displayText: `Instagram`, url : `https://instagram.com/iamghosky_` } },
+			{ callButton: { displayText: `Call Owner!`, phoneNumber: `+6281515589573` } },
+			{ urlButton: { displayText: `Instagram`, url : `https://instagram.com/_` } },
 			{ quickReplyButton: { displayText: `🧑 Owner`, id: `${prefix}owner` } },
 			{ quickReplyButton: { displayText: `💰 Donasi`, id: `${prefix}donate` } }
 		]
@@ -320,11 +321,11 @@ module.exports = async(conn, msg, m, setting) => {
 			    reply(`◪ DONASI
   │
   ├─ ❏ OVO
-  ├─ ❏ 089653381067
+  ├─ ❏ 081515589573
   ├─ ❏ PULSA
-  ├─ ❏ 089653381067
+  ├─ ❏ 081515589573
   ├─ ❏ INSTAGRAM
-  └─ ❏ https://www.instagram.com/iamghosky_
+  └─ ❏ https://www.instagram.com/_
   
   Donasi Untuk Upgrade Ke Fitur Premium
   Note : Donasi Seikhlasnya`)
@@ -702,6 +703,13 @@ case prefix+'husbu':
 				conn.sendMessage(from, { caption: "Random Husbu", image: { url: pickRandom(data.result) }, buttons: but, footer: 'Pencet tombol dibawah untuk foto selanjutnya' }, { quoted: msg })
 			    limitAdd(sender, limit)
  			    break
+ 			    case prefix+'hentai':
+				if (isLimit(sender, isPremium, isOwner, limitCount, limit)) return reply (`Limit kamu sudah habis silahkan kirim ${prefix}limit untuk mengecek limit`)
+                reply(mess.wait)
+                anu = await hentai()
+                result = anu[Math.floor(Math.random(), anu.length)]
+                coon.sendMessage(m.chat, { video: { url: result.video_1 }, caption: `⭔ Title : ${result.title}\n⭔ Category : ${result.category}\n⭔ Mimetype : ${result.type}\n⭔ Views : ${result.views_count}\n⭔ Shares : ${result.share_count}\n⭔ Source : ${result.link}\n⭔ Media Url : ${result.video_1}` }, { quoted: msg })                
+                break
 			// Search Menu
 			case prefix+'lirik': case 'liriklagu':
 			    if (isLimit(sender, isPremium, isOwner, limitCount, limit)) return reply (`Limit kamu sudah habis silahkan kirim ${prefix}limit untuk mengecek limit`)
@@ -938,7 +946,7 @@ case prefix+'husbu':
                 break
 			case prefix+'transfer':
             case prefix+'tf':{
-                 if (args.length < 2) return reply(`Kirim perintah *${command}* @tag nominal\nContoh : ${command} @6285791458996 2000`)
+                 if (args.length < 2) return reply(`Kirim perintah *${command}* @tag nominal\nContoh : ${command} @6281515589573 2000`)
                  if (mentioned.length == 0) return reply(`Tag orang yang ingin di transfer balance`)
                  if (!args[2]) return reply(`Masukkan nominal nya!`)
                  if (isNaN(args[2])) return reply(`Nominal harus berupa angka!`)

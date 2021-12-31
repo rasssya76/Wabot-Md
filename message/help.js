@@ -20,19 +20,19 @@ function toCommas(x) {
 }
 
 exports.allmenu = (sender, prefix, pushname, isOwner, isPremium, balance, limit, limitCount, glimit, gcount) => {
-	return `*── 「 ${setting.botName} - MD Beta 」 ──*
+	return `*「 ${setting.botName} 」*
 	
   _*${ucapanWaktu} ${pushname !== undefined ? pushname : 'Kak'}*_
 
-    Library : *Baileys-MD*.
-    Prefix : ( ${prefix} )
-    Tanggal Server : ${moment.tz('Asia/Jakarta').format('DD/MM/YY')}
-    Waktu Server : ${moment.tz('Asia/Jakarta').format('HH:mm:ss')}
+    _Library : *Baileys-MD*._
+    _Prefix : ( ${prefix} )_
+    _Tanggal Server : ${moment.tz('Asia/Jakarta').format('DD/MM/YY')}_
+    _Waktu Server : ${moment.tz('Asia/Jakarta').format('HH:mm:ss')}_
 
-	Status : ${isOwner ? 'Owner' : isPremium ? 'Premium' : 'Free'}
-	Limit Harian : ${isOwner ? '-' : isPremium ? 'Unlimited' : getLimit(sender, limitCount, limit)}
-	Limit Game : ${isOwner ? '-' : cekGLimit(sender, gcount, glimit)}
-	Balance : $${toCommas(getBalance(sender, balance))}
+	*Status : ${isOwner ? 'Owner' : isPremium ? 'Premium' : 'Free'}*
+	*Limit Harian : ${isOwner ? '-' : isPremium ? 'Unlimited' : getLimit(sender, limitCount, limit)}*
+	*Limit Game : ${isOwner ? '-' : cekGLimit(sender, gcount, glimit)}*
+	*Balance : $${toCommas(getBalance(sender, balance))}*
 
  › *My Feature* ‹
   ≻ ${prefix}menu
@@ -66,6 +66,7 @@ exports.allmenu = (sender, prefix, pushname, isOwner, isPremium, balance, limit,
   ≻ ${prefix}loli
   ≻ ${prefix}waifu
   ≻ ${prefix}husbu
+  ≻ ${prefix}hentai
   
  › *Feature Search* ‹
   ≻ ${prefix}lirik
@@ -108,6 +109,7 @@ exports.allmenu = (sender, prefix, pushname, isOwner, isPremium, balance, limit,
 *THANKS TO*
 - Riyan
 - Arasya
+- RamaGans
 - Xyann
 
 `+'     \`\`\`Powered by Nodejs\`\`\`'
