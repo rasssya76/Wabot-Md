@@ -66,7 +66,6 @@ exports.allmenu = (sender, prefix, pushname, isOwner, isPremium, balance, limit,
   ≻ ${prefix}loli
   ≻ ${prefix}waifu
   ≻ ${prefix}husbu
-  ≻ ${prefix}hentai
   
  › *Feature Search* ‹
   ≻ ${prefix}lirik

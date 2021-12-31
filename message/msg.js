@@ -10,7 +10,6 @@ const { isLimit, limitAdd, getLimit, giveLimit, addBalance, kurangBalance, getBa
 const { isTicTacToe, getPosTic } = require("../lib/tictactoe");
 const { addPlayGame, getJawabanGame, isPlayGame, cekWaktuGame, getGamePosi } = require("../lib/game");
 const tictac = require("../lib/tictac");
-const { hentai } = require('./lib/scraper')
 const _prem = require("../lib/premium");
 
 const fs = require ("fs");
@@ -702,14 +701,7 @@ case prefix+'husbu':
 				var but = [{buttonId: `/husbu`, buttonText: { displayText: "Next Photo" }, type: 1 }]
 				conn.sendMessage(from, { caption: "Random Husbu", image: { url: pickRandom(data.result) }, buttons: but, footer: 'Pencet tombol dibawah untuk foto selanjutnya' }, { quoted: msg })
 			    limitAdd(sender, limit)
- 			    break
- 			    case prefix+'hentai':
-				if (isLimit(sender, isPremium, isOwner, limitCount, limit)) return reply (`Limit kamu sudah habis silahkan kirim ${prefix}limit untuk mengecek limit`)
-                reply(mess.wait)
-                anu = await hentai()
-                result = anu[Math.floor(Math.random(), anu.length)]
-                coon.sendMessage(m.chat, { video: { url: result.video_1 }, caption: `⭔ Title : ${result.title}\n⭔ Category : ${result.category}\n⭔ Mimetype : ${result.type}\n⭔ Views : ${result.views_count}\n⭔ Shares : ${result.share_count}\n⭔ Source : ${result.link}\n⭔ Media Url : ${result.video_1}` }, { quoted: msg })                
-                break
+ 			    break 			     
 			// Search Menu
 			case prefix+'lirik': case 'liriklagu':
 			    if (isLimit(sender, isPremium, isOwner, limitCount, limit)) return reply (`Limit kamu sudah habis silahkan kirim ${prefix}limit untuk mengecek limit`)
