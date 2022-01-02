@@ -37,75 +37,75 @@ exports.allmenu = (sender, prefix, pushname, isOwner, isPremium, balance, limit,
  _Balance : $${toCommas(getBalance(sender, balance))}_
 
  _*My Feature*_
- ≻ ${prefix}menu
- ≻ ${prefix}owner
- ≻ ${prefix}donasi
- ≻ ${prefix}speed
- ≻ ${prefix}runtime
- ≻ ${prefix}cekprem
- ≻ ${prefix}listprem
+ _• ${prefix}menu_
+ _• ${prefix}owner_
+ _• ${prefix}donasi_
+ _• ${prefix}speed_
+ _• ${prefix}runtime_
+ _• ${prefix}cekprem_
+ _• ${prefix}listprem_
 
  _*Feature Converter/Tools*_
- ≻ ${prefix}sticker
- ≻ ${prefix}toimg
- ≻ ${prefix}tovid
+ _• ${prefix}sticker_
+ _• ${prefix}toimg_
+ _• ${prefix}tovid_
 
  _*Feature Downloader*_
- ≻ ${prefix}play
- ≻ ${prefix}tiktok
- ≻ ${prefix}ytmp4
- ≻ ${prefix}ytmp3
- ≻ ${prefix}getvideo
- ≻ ${prefix}getmusic
- ≻ ${prefix}instagram
- ≻ ${prefix}facebook
+ _• ${prefix}play_
+ _• ${prefix}tiktok_
+ _• ${prefix}ytmp4_
+ _• ${prefix}ytmp3_
+ _• ${prefix}getvideo_
+ _• ${prefix}getmusic_
+ _• ${prefix}instagram_
+ _• ${prefix}facebook_
  
  _*Feature Random*_
- ≻ ${prefix}quote
- ≻ ${prefix}cecan
- ≻ ${prefix}cogan
- ≻ ${prefix}naruto
- ≻ ${prefix}loli
- ≻ ${prefix}waifu
- ≻ ${prefix}husbu
+ _• ${prefix}quote_
+ _• ${prefix}cecan_
+ _• ${prefix}cogan_
+ _• ${prefix}naruto_
+ _• ${prefix}loli_
+ _• ${prefix}waifu_
+ _• ${prefix}husbu_
  
  _*Feature Search*_
- ≻ ${prefix}lirik
- ≻ ${prefix}grupwa
- ≻ ${prefix}ytsearch
- ≻ ${prefix}pinterest Query
+ _• ${prefix}lirik_
+ _• ${prefix}grupwa_
+ _• ${prefix}ytsearch_
+ _• ${prefix}pinterest_ Query
  
  _*Feature Game*_
- ≻ ${prefix}tictactoe
- ≻ ${prefix}delttc
- ≻ ${prefix}tebakgambar
+ _• ${prefix}tictactoe_
+ _• ${prefix}delttc_
+ _• ${prefix}tebakgambar_
  
  _*Payment & Bank*_
- ≻ ${prefix}buylimit
- ≻ ${prefix}buyglimit
- ≻ ${prefix}transfer
- ≻ ${prefix}limit
- ≻ ${prefix}balance
- ≻ ${prefix}topbalance
+ _• ${prefix}buylimit_
+ _• ${prefix}buyglimit_
+ _• ${prefix}transfer_
+ _• ${prefix}limit_
+ _• ${prefix}balance_
+ _• ${prefix}topbalance_
  
  _*Feature Only Group*_
- ≻ ${prefix}linkgrup
- ≻ ${prefix}setppgrup
- ≻ ${prefix}setnamegc
- ≻ ${prefix}setdesc
- ≻ ${prefix}group
- ≻ ${prefix}revoke
- ≻ ${prefix}hidetag
+ _• ${prefix}linkgrup_
+ _• ${prefix}setppgrup_
+ _• ${prefix}setnamegc_
+ _• ${prefix}setdesc_
+ _• ${prefix}group_
+ _• ${prefix}revoke_
+ _• ${prefix}hidetag_
  
  _*Feature Only Owner*_
- > evalcode
- x evalcode-2
- $ executor
- ≻ ${prefix}setppbot
- ≻ ${prefix}exif
- ≻ ${prefix}leave
- ≻ ${prefix}addprem
- ≻ ${prefix}delprem
+ *> evalcode*
+ *x evalcode-2*
+ *$ executor*
+ _• ${prefix}setppbot_
+ _• ${prefix}exif_
+ _• ${prefix}leave_
+ _• ${prefix}addprem_
+ _• ${prefix}delprem_
 
 *THANKS TO*
 - Riyan

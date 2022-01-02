@@ -305,7 +305,7 @@ module.exports = async(conn, msg, m, setting) => {
 			case prefix+'menu':
 			case prefix+'help':
 			    var teks = allmenu(sender, prefix, pushname, isOwner, isPremium, balance, limit, limitCount, glimit, gcount)
-			    conn.sendMessage(from, { caption: teks, location: { jpegThumbnail: fs.readFileSync(setting.pathimg) }, templateButtons: buttonsDefault, footer: 'RamZTEam-ID © 2021', mentions: [sender] })
+			    conn.sendMessage(from, { caption: teks, location: { jpegThumbnail: fs.readFileSync(setting.pathimg) }, templateButtons: buttonsDefault, footer: '©R-BOT-MD', mentions: [sender] })
 				break
 			case prefix+'runtime':
 			    reply(runtime(process.uptime()))
